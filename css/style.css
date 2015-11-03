@@ -1,0 +1,241 @@
+@charset "utf-8";
+
+@import url("https://necolas.github.io/normalize.css/3.0.2/normalize.css");
+
+@import url("http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css");
+
+@import url("bootstrap.min.css");
+
+@import url(http://fonts.googleapis.com/css?family=Lily+Script+One);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url(http://fonts.googleapis.com/css?family=Lato);
+
+body {
+	background-color: #fff;
+}
+
+.container {
+	margin-top: 50px;
+}
+
+header #logo {
+	font-size: 62px;
+	font-family: 'Lily Script One', cursive;
+	color: #89BABE;
+	text-shadow: 2px 2px #BFDFE1;
+}
+
+header #logo:hover {
+	text-decoration: none;
+}
+
+header nav {
+	float: right;
+	margin-top: 30px;
+}
+
+header nav a {
+	font-size: 18px;
+	font-family: 'Lily Script One', cursive;
+	color: #FFA891;
+	text-shadow: 0.5px 0.5px #FFD6CC;
+	margin-right: 20px;
+}
+
+header nav a:hover {
+	color: #FFA891;
+}
+
+header nav a:last-child {
+	margin-right: 0;
+}
+
+@media (max-width: 992px) {
+	header #logo {
+		text-align: center;
+	}
+	
+	header nav {
+		float: none;
+		text-align: center;
+	}
+}
+
+.carousel {
+	background-color: #89BABE;
+	width: 100%;
+	height: auto;
+	margin-top: 50px;
+	overflow: hidden;
+}
+
+@keyframes slide {
+	0% { left: 0%; }
+	20% { left: 0%; }
+	25% { left: -100%; }
+	45% { left: -100%; }
+	50% { left: -200%; }
+	70% { left: -200%; }
+	75% { left: -300%; }
+	95% { left: -300%; }
+	100% { left: -400%; }
+}
+
+.carousel figure {
+	position: relative;
+	width: 500%;
+	margin: 0;
+	left: 0;
+	text-align: left;
+	font-size: 0;
+	animation: 30s slide infinite;
+}
+
+.carousel figure img {
+	width: 20%;
+	float: left;
+}
+
+.service {
+	background-color: #FFA891;
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	margin: auto;
+	margin-top: 60px;
+	margin-bottom: 20px;
+}
+
+.service:hover {
+	background-color: #fff;
+}
+
+.service i {
+	font-size: 40px;
+	margin-left: 80px;
+	margin-top: 60px;
+	color: #fff;
+}
+
+.service p {
+	font-size: 24px;
+	font-family: 'Lily Script One', cursive;
+	text-align: center;
+	color: #FFF;
+	padding-top: 10px;
+}
+
+.title-divider {
+	font-size: 22px;
+	font-family: 'Lily Script One', cursive;
+	color: #89BABE;
+	text-shadow: 2px 2px #BFDFE1;
+	text-align: center;
+	margin-top: 30px;
+}
+
+article {
+	margin-top: 40px;
+}
+
+article header {
+	font-size: 32px;
+	font-family: 'Lily Script One', cursive;
+	color: #FFA891;
+	text-shadow: 2px 2px #FFE2DB;
+	text-align: center;
+}
+
+article header a {
+	color: #FFA891;
+}
+
+article header a:hover {
+	color: #FFA891;
+}
+
+article p {
+	font-size: 16px;
+	font-family: 'Lato', sans-serif;
+	color: #909090;
+}
+
+article p a {
+	color: #FFA891
+}
+
+article p a:hover {
+	color: #FFA891;
+}
+
+.product {
+	margin: auto;
+	width: 360px;
+	margin-top: 50px;
+}
+
+.product:hover {
+	opacity: 0.8;
+}
+
+.product .product-name {
+	font-size: 22px;
+	font-family: 'Lily Script One', cursive;
+	color: #FFA891;
+	text-shadow: 2px 2px #FFE2DB;
+	text-align: center;
+	margin-top: 10px;
+}
+
+footer {
+	background-color: #353535;
+	height: auto;
+	min-height: 130px;
+	margin-top: 50px;
+}
+
+footer .footer-widget {
+	margin: 20px;
+}
+
+footer .footer-widget header {
+	font-size: 24px;
+	font-family: 'Lily Script One', cursive;
+	color: #89BABE;
+}
+
+footer .footer-widget p {
+	color: #909090;
+}
+
+footer .footer-widget p .tweet-by {
+	float: right;
+	color: #FFA891;
+}
+
+footer #copyrights {
+	color: #909090;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+#story p {
+	font-size: 16px;
+	font-family: 'Lato', sans-serif;
+	color: #909090;
+}
+
+#map {
+	width: 100%;
+	height: 400px;
+	margin-top: 50px;
+}
+
+#contact {
+	width: 500px;
+	margin-top: 50px;
+}
+
+#contact textarea {
+	margin-bottom: 15px;
+}
